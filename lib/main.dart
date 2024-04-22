@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -28,22 +28,28 @@ class GrayContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 400,
-      height: 400,
-      color: Colors.grey[300],
-      child: const Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          MinecraftHead(),
-          Padding(
-            padding: EdgeInsets.only(top: 40),
-            child: Text(
-              'Minecraft crash',
-              style: TextStyle(fontSize: 20),
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(10),
+      child: Container(
+        width: 300,
+        height: 300,
+        color: Colors.grey[300],
+        child: const Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            MinecraftHead(),
+            Padding(
+              padding: EdgeInsets.only(top: 10),
+              child: Text(
+                'Minecraft crash',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
