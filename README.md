@@ -1,16 +1,7 @@
-# flutter_application_minecraft
+# flutter_minecraft
 
-A new Flutter project.
+The Flutter code provided is an example of how to create a graphical representation of a Minecraft-style character head within a gray container and display a text message "Minecraft crash" below the head. 
 
-## Getting Started
+## Minecraft crash
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+MyApp Class: This is the root widget of the application. It sets up the main application and contains the material app with a scaffold, including a top app bar with a title and a body section where the main content is displayed. GrayContainer Class: This class is responsible for creating the gray container that encompasses the Minecraft head and the text message. It uses a Container widget with a specified width, height, and gray color (Colors.grey[300]). Inside the container, a Column widget vertically aligns the Minecraft head and the text message "Minecraft crash." MinecraftHead Class: This class defines the visual representation of a Minecraft-style character head. It uses a Stack widget to layer different components: The head is represented by a green square (Container with Colors.green color). Two black squares are positioned to represent the left and right eyes. A black rectangle is positioned at the bottom of the head to represent the mouth. Text Display: The text message "Minecraft crash" is displayed below the Minecraft head using a Text widget within the GrayContainer class. The text is styled with a specified font size and weight. The code demonstrates the use of Flutter's widgets, such as Container, Column, Stack, Positioned, and Text, to create a simple graphical layout with specific visual elements. This includes a Minecraft-style character head within a gray container and a text message underneath. You can customize the size, positioning, and styling as needed.<img width="646" alt="Снимок экрана 2024-04-22 в 23 09 21" src="https://github.com/inzhu-ka/flutter_minecraft/assets/145310551/9be3c386-fcb1-4733-a7db-4e5c2ad9a004">
